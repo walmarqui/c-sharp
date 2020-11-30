@@ -35,11 +35,14 @@ public class DatosdePrueba
 
     private void cargarClientes()
     {
-        Cliente c1 = new Cliente(1, "Juan Martinez", "77777");
+        Cliente c1 = new Cliente(001, "Juan Martinez", "504-9999-9999");
         ListadeClientes.Add(c1);
 
-        Cliente c2 = new Cliente(2, "Pedro Escobar", "99999");
+        Cliente c2 = new Cliente(002, "Pedro Escobar", "504-8888-8888");
         ListadeClientes.Add(c2);
+
+        Cliente c3 = new Cliente(003, "Maria Perez  ", "504-9988-9988");
+        ListadeClientes.Add(c3);
     }
 
     private void cargarVendedores()
@@ -156,9 +159,9 @@ public class DatosdePrueba
                 break;
             }
         }
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 5; i++)
         {
-            Console.Write(">>>>> ");
+            Console.Write("-----");
         }
         Console.WriteLine("");
         Console.WriteLine("Subtotal es :       " + nuevaOrden.SubTotal);
