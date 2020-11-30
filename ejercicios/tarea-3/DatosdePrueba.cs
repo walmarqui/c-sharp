@@ -197,8 +197,11 @@ public class DatosdePrueba
             {
                 Console.WriteLine(detalle.Producto.Descripcion + "  |   " + detalle.Cantidad + "   | " + detalle.Precio);
             }
+
+            Console.WriteLine("Sub-total: " + orden.SubTotal);
+            Console.WriteLine("Impuestos: " + orden.Impuesto);
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("El total a pagar es:  " + orden.Total);
+            Console.WriteLine("El total a pagar:  " + orden.Total);
             Console.Write("----------------------------------");
 
             Console.WriteLine();
