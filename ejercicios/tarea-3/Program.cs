@@ -16,9 +16,9 @@ namespace tarea_3
                 Console.WriteLine("==================");
                 Console.WriteLine("");
                 Console.WriteLine("1 - Lista de Productos");
-                Console.WriteLine("2 - Crear Orden");
+                Console.WriteLine("2 - Lista de Vendedores");
                 Console.WriteLine("3 - Lista de Clientes");
-                Console.WriteLine("4 - Lista de Vendedores");
+                Console.WriteLine("4 - Crear Orden");
                 Console.WriteLine("5 - Lista de Ordenes");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
@@ -29,13 +29,13 @@ namespace tarea_3
                         datos.ListarProductos();
                         break;
                     case "2":
-                        datos.CrearOrden();
+                        datos.ListarVendedores();
                         break;
                     case "3":
                         datos.ListarClientes();
                         break;
                     case "4":
-                        datos.ListarVendedores();
+                        datos.CrearOrden();
                         break;      
                     case "5":
                         datos.ListarOrdenes();
