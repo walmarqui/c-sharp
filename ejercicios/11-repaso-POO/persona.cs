@@ -1,3 +1,4 @@
+using System;
 public class Persona
 {
     public int Id { get; set; }
@@ -14,19 +15,19 @@ public class Persona
     }
     public void EnviarMensaje()
     {
-        Console.Writeline("Mensaje...");
+        Console.WriteLine("Mensaje...");
         EnviarCorreo();
         EnviarMensajedeWhatsapp();
     }
     public void EnviarMensaje(string nombre)
     {
-        Console.Writeline("Mensaje para: " + nombre);
+        Console.WriteLine("Mensaje para: " + nombre);
         EnviarCorreo();
         EnviarMensajedeWhatsapp();
     }
     public void EnviarMensaje(string de, string para, string mensaje)
     {
-        Console.Writeline("Mensaje de: " + de + " para " +  para + ", mensaje " + mensaje);
+        Console.WriteLine("Mensaje de: " + de + " para " +  para + ", mensaje " + mensaje);
         EnviarCorreo();
         EnviarMensajedeWhatsapp();
     }
